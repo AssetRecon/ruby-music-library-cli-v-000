@@ -11,18 +11,12 @@ module Memorable
       knew.save
         knew
       end
-
   end
-
+  
   module InstanceMethods
 
     def save
       self.class.all << self
     end
-
-
-
-
-
   end
 end
