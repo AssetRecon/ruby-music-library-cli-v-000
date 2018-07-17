@@ -1,4 +1,3 @@
-
 class Genre
 
   extend Memorable::ClassMethods
@@ -23,6 +22,12 @@ class Genre
      artists << song.artist
     end
     artists.uniq
+  end
+
+  def self.create(name)
+    genre = Genre.new(name)
+    genre.save
+    genre
   end
 
 end

@@ -5,11 +5,12 @@ module Memorable
         all.clear
       end
 
-      def create(name)
-        knew = new(name)
-        knew.save
-        knew
-      end
+  #    def create(name)
+  #      knew = new(name)
+    #    knew.name = name
+  #      knew.save
+  #      knew
+  #    end
 
   end
 
