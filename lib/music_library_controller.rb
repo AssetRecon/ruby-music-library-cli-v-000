@@ -8,7 +8,7 @@ class MusicLibraryController
 
   def call
     puts "Welcome to your music library!"
-      input = gets until input == "gets"
+      input = gets until input != nil
 
   end
 
