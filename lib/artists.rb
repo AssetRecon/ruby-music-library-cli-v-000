@@ -18,12 +18,6 @@ class Artist
     @songs = []
   end
 
-#  def self.create(name)
-#    artist = Artist.new(name)
-#    artist.save
-#    artist
-#  end
-#
   def add_song(song)
     if song.artist == nil
       song.artist = self
