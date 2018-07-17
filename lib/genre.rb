@@ -24,10 +24,5 @@ class Genre
     artists.uniq
   end
 
-#  def self.create(name)
-#    genre = Genre.new(name)
-#    genre.save
-#    genre
-#  end
 
 end
