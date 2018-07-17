@@ -50,12 +50,9 @@ class Song
 
   def artist_name(name)
   #  Artist.find_or_create_by_name(name)
-    knew = Artist.find_by_name(name)
-    if !Artist.all.include?(knew)
-      self.artist = Artist.new(name)
-      self.artist.name
-    else
-      self.artist.name
+    Artist.find_by_name(name)
+  artist = Artist.new(name)
+  artist
    end
   end
 
