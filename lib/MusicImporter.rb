@@ -10,7 +10,7 @@ class MusicImporter
     files =  Dir.entries(@path) - ["."] - [".."]
   end
 
-  def self.import
+  def import
     #imports all of the files from the library, instantiating a new Song object for each file.
     files.each do |filename|
     Song.create_from_filename(filename)
