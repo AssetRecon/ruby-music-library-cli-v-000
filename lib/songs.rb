@@ -55,12 +55,5 @@ class Song
   end
 
 
-  #def self.create(name)
-  #  song = Song.new(name)
-  #  song.save
-  #  song
-  #end
-
-
 
 end
