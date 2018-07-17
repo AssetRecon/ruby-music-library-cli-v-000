@@ -51,14 +51,7 @@ class Song
 
   def self.create_from_filename(filename)
     # does the same thing as .new_from_filename but also saves the newly-created song to the @@all class variable.
-    song_string = filename.split("-")[1].strip
-    artist_string = filename.split("-")[0].strip
-    genre_string = filename.split("-")[2].split(".")[0].strip
-
-    artist = Artist.find_or_create_by_name(artist_string)
-    genre = Genre.find_or_create_by_name(genre_string)
-
-    Song.new(song_string,artist,genre).save
+    new_from_filename(filename).save
   end
 
 
