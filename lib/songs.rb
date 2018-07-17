@@ -53,8 +53,10 @@ class Song
     knew = Artist.find_by_name(name)
     if !Artist.all.include?(knew)
       self.artist = Artist.new(name)
-   end
       self.artist.name
+    else
+      self.artist.name
+   end
   end
 
   def genre_name=(name)
