@@ -53,7 +53,7 @@ class Song
   #  Artist.find_by_name(name)
   artist = Artist.new(name)
   artist
-   end
+
   end
 
   def genre_name=(name)
