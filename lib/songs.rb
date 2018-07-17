@@ -49,7 +49,7 @@ class Song
   Song.new(song_string,artist,genre)
   end
 
-  def self.create_from_filename(fileame)
+  def self.create_from_filename(filename)
     # does the same thing as .new_from_filename but also saves the newly-created song to the @@all class variable.
     song_string = filename.split("-")[1].strip
     artist_string = filename.split("-")[0].strip
