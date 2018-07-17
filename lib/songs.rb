@@ -47,25 +47,7 @@ class Song
   genre = Genre.find_or_create_by_name(genre_string)
 
   Song.new(song_string,artist,genre)
-  #new_song = Song.new(song_name)
-  #new_song.artist_name(artist)
-  #new_song.genre_name = genre
-  #new_song
-  end
 
-  def artist_name(name)
-  #Artist.find_or_create_by_name(name)
-    if Artist.find_by_name(name) == nil
-      artist = Artist.new(name)
-      artist.add_song(self)
-    end
-    self.artist
-  end
-
-  def genre_name=(name)
-  #  Genre.find_or_create_by_name(name)
-      self.genre = Genre.new(name)
-      self.genre.name
   end
 
   def self.create_from_filename
