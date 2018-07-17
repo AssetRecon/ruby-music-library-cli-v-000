@@ -50,7 +50,7 @@ class Song
 
   def artist_name(name)
   #  Artist.find_or_create_by_name(name)
-    Artist.find_by_name(name)
+  #  Artist.find_by_name(name)
   artist = Artist.new(name)
   artist
    end
