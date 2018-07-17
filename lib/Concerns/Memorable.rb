@@ -12,7 +12,7 @@ module Memorable
         knew
       end
   end
-  
+
   module InstanceMethods
 
     def save
