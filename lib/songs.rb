@@ -49,10 +49,11 @@ class Song
   end
 
   def artist_name(name)
-  #  Artist.find_or_create_by_name(name)
-  #  Artist.find_by_name(name)
+  #Artist.find_or_create_by_name(name)
+  if Artist.find_by_name(name) == nil
   artist = Artist.new(name)
   artist.add_song(self)
+  end
 
   end
 
